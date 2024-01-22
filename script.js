@@ -20,4 +20,11 @@ const allSongs = [
         duration: "4:15",
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/cant-stay-down.mp3",
     },
+    {
+        id: 2,
+        title: "Still Learning",
+        artist: "Quincy Larson",
+        duration: "3:51",
+        src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/still-learning.mp3",
+    },
 ];
