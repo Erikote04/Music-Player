@@ -110,7 +110,11 @@ const pauseSong = () => {
     audio.pause();
 };
 
-const playNextSong = () => {};
+const playNextSong = () => {
+    if (userData?.currentSong === null) {
+        playSong(userData?.songs[0].id);
+    }
+};
 
 const renderSongs = (array) => {
     const songsHTML = array
