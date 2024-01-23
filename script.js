@@ -212,4 +212,6 @@ pauseButton.addEventListener("click", pauseSong);
 
 nextButton.addEventListener("click", playNextSong);  
 
+shuffleButton.addEventListener("click", shuffle);
+
 renderSongs(userData?.songs);
