@@ -1,6 +1,6 @@
 const previousButton = document.getElementById("previous");
-const pauseButton = document.getElementById("pause");
 const playButton = document.getElementById("play");
+const pauseButton = document.getElementById("pause");
 const nextButton = document.getElementById("next");
 const shuffleButton = document.getElementById("shuffle");
 const playlistSongs = document.getElementById("playlist-songs");
@@ -86,7 +86,13 @@ let userData = {
     songCurrentTime: 0,
 };
 
-const playPreviousSong = () => {};
+const playPreviousSong = () => {
+    if (userData?.currentSong === null) {
+        return;
+    } else {
+        const currentSongIndex = getCurrentSongIndex();
+    }
+};
 
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
