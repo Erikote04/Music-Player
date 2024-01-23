@@ -87,9 +87,8 @@ let userData = {
 };
 
 const playPreviousSong = () => {
-    if (userData?.currentSong === null) {
-        return;
-    } else {
+    if (userData?.currentSong === null) return;
+    else {
         const currentSongIndex = getCurrentSongIndex();
         const previousSong = userData?.songs[currentSongIndex - 1];
 
@@ -152,9 +151,7 @@ const highlightCurrentSong = () => {
         songEl.removeAttribute("aria-current");
     });
 
-    if (songToHighlight) {
-        songToHighlight.setAttribute("aria-current", "true");
-    }
+    if (songToHighlight) songToHighlight.setAttribute("aria-current", "true");
 };
 
 const renderSongs = (array) => {
@@ -180,6 +177,11 @@ const renderSongs = (array) => {
 
 const setPlayButtonAccessibleText = () => {
     const song = userData?.currentSong || userData?.songs[0];
+
+    playButton.setAttribute(
+        "aria-label",
+        song?.title ? `Play ${song.title}` : "Play"
+    );
 };
 
 const getCurrentSongIndex = () => userData?.songs.indexOf(userData.currentSong);
