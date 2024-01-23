@@ -136,7 +136,9 @@ const highlightCurrentSong = () => {
     const playlistSongElements = document.querySelectorAll(".playlist-song");
     const songToHighlight = document.getElementById(`song-${userData?.currentSong?.id}`);
 
-    playlistSongElements.forEach((songEl) => {});
+    playlistSongElements.forEach((songEl) => {
+        songEl.removeAttribute("aria-current");
+    });
 };
 
 const renderSongs = (array) => {
