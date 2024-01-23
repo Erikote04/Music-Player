@@ -127,7 +127,7 @@ const playNextSong = () => {
     } else {
         const currentSongIndex = getCurrentSongIndex();
         const nextSong = userData?.songs[currentSongIndex + 1];
-        
+
         playSong(nextSong.id);
     }
 };
@@ -162,6 +162,8 @@ playButton.addEventListener("click", () => {
         playSong(userData?.currentSong.id);
     }
 });
+
+previousButton.addEventListener("click", playPreviousSong);
 
 pauseButton.addEventListener("click", pauseSong);
 
