@@ -245,4 +245,8 @@ nextButton.addEventListener("click", playNextSong);
 
 shuffleButton.addEventListener("click", shuffle);
 
+audio.addEventListener("ended", () => {});
+
 renderSongs(userData?.songs);
+
+setPlayButtonAccessibleText();
