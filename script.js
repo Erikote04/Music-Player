@@ -153,4 +153,6 @@ playButton.addEventListener("click", () => {
 
 pauseButton.addEventListener("click", pauseSong);
 
+nextButton.addEventListener("click", playNextSong);  
+
 renderSongs(userData?.songs);
