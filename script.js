@@ -112,6 +112,7 @@ const playSong = (id) => {
     
     highlightCurrentSong();
     setPlayerDisplay();
+    setPlayButtonAccessibleText();
     audio.play();
 };
 
