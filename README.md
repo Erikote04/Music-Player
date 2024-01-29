@@ -4,6 +4,10 @@
 
 The **Music Player App** is a web-based application designed to provide users with a simple and intuitive interface for playing and managing a playlist of songs. The app includes essential features such as play, pause, skip, shuffle, and playlist management.
 
+<img width="470" alt="music-player" src="https://github.com/Erikote04/Music-Player/assets/126704751/c43076f8-b37e-41eb-b74a-074f0f1caeb8">
+<img width="315" alt="music-player-media-query" src="https://github.com/Erikote04/Music-Player/assets/126704751/8185836b-3333-44ff-a515-463d44fad40d">
+
+
 ## Features
 
 ### 1. Player Controls
