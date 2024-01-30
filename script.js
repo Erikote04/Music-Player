@@ -262,6 +262,6 @@ audio.addEventListener("ended", () => {
     }
 });
 
-userData?.songs.sort();
+userData?.songs.sort((a, b) => {});
 renderSongs(userData?.songs);
 setPlayButtonAccessibleText();
